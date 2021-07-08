@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
+  nivel: number = 1;
+  bigger: boolean = true;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  definirNivelTamannio(): string {
+    return `nivel-${this.nivel}`;
+  }
 }
